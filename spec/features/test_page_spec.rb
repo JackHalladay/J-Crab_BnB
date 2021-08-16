@@ -1,3 +1,4 @@
+require_relative '../../lib/spaces.rb'
 feature 'Viewing test page' do
   scenario 'visiting the test page' do
     visit('/test')
