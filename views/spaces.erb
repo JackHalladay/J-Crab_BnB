@@ -2,21 +2,18 @@
 <h2>'These are the current rooms'</h2>
 
 
-<ul>
+<div>
 <% @spaces.each do |spaces| %>
-  <li>
-    <br>name: <%= spaces %>   
-    </a>
-  </li>
+  <p>Name: <%= spaces %>
+  <form method="get" action="/requestspaces">
+<input type="submit" value="Request to book a Space" />
+</form> 
+  </p>
 <% end %>
-</ul>
+</div>
 
 <form method="get" action="/addspaces">
 <input type="submit" value="Add a Space" />
-</form>
-
-<form method="get" action="/requestspaces">
-<input type="submit" value="Request to book a Space" />
 </form>
 
 
