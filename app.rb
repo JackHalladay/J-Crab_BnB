@@ -15,6 +15,9 @@ get '/spaces' do
   erb :spaces
 end
 
+get '/addspaces' do
+'Add a Space'
+end
   run! if app_file == $0
 end
 

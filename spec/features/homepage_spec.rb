@@ -13,6 +13,19 @@ feature 'Homepage Functionality' do
     end
   end
 
+ feature 'View listing of spaces' do
+   scenario 'A User can see a list of Spaces' do
+    visit ('/')
+    click_button('View our Spaces')
+    expect(page).to have_content"These are the current rooms"
+ end
 
-  end  
+ feature 'Adding a Space button' do
+  scenario 'Allows User to add a space with button' do
+    visit ('/spaces')
+    click_button('Add a Space')
+    expect(page).to have_content('Add a Space')
+  end
+end
+end  
 
