@@ -1,0 +1,19 @@
+<h1>'View our Spaces'</h1>
+<h2>'These are the current rooms'</h2>
+
+
+<div>
+<% @spaces.each do |spaces| %>
+  <p>Name: <%= spaces %>
+  <form method="get" action="/requestspaces">
+<input type="submit" value="Request to book a Space" />
+</form> 
+  </p>
+<% end %>
+</div>
+
+<form method="get" action="/addspaces">
+<input type="submit" value="Add a Space" />
+</form>
+
+
