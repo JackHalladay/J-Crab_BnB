@@ -6,9 +6,7 @@ class BnB < Sinatra::Base
   end
 
 get '/' do
-
   erb :homepage
-  
 end
 
 get '/spaces' do
@@ -16,8 +14,17 @@ get '/spaces' do
 end
 
 get '/addspaces' do
-'Add a Space'
+  erb :addspaces
 end
+
+get '/requestspaces' do
+  erb :requests
+end
+
+post '/spaces' do
+  input = params['inputspacetextbox']
+end
+
   run! if app_file == $0
 end
 
