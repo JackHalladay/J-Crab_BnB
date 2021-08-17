@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/spaces.rb'
 
 class BnB < Sinatra::Base
   get '/test' do
@@ -10,6 +11,7 @@ get '/' do
 end
 
 get '/spaces' do
+  @spaces = Spaces.view
   erb :spaces
 end
 
@@ -22,7 +24,9 @@ get '/requestspaces' do
 end
 
 post '/spaces' do
-  input = params['inputspacetextbox']
+  #input = params['inputspacetextbox']
+Spaces.create(name: params['inputspacetextbox'])
+redirect '/spaces'
 end
 
   run! if app_file == $0

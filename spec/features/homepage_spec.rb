@@ -42,9 +42,21 @@ feature 'Input Name of space' do
     visit ('/addspaces')
     fill_in('inputspacetextbox', with: 'J-Crab BnB Original, J-Crab island')
     click_button('Submit')
-    expect(page).to have_content('Spaces')
+    expect(page).to have_content('J-Crab BnB Original, J-Crab island')
   end
 end
-
+feature 'list spaces' do
+  scenario "user can see a list of spaces on the spaces page" do
+    visit ('/addspaces')
+    fill_in('inputspacetextbox', with: 'J-Crab BnB Original, J-Crab island')
+    click_button('Submit')
+    visit ('/addspaces')
+    fill_in('inputspacetextbox', with: 'J-Crab2 BnB Original, J-Crab island')
+    click_button('Submit')
+    
+    expect(page).to have_content('J-Crab BnB Original, J-Crab island')
+    expect(page).to have_content('J-Crab2 BnB Original, J-Crab island')
+  end
+end
 
 
