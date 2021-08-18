@@ -36,7 +36,7 @@ end
     fill_in('inputspacetextbox', with: 'J-Crab BnB Original, J-Crab island')
     click_button('Submit')
     visit ('/spaces')
-    click_button("Request to book a Space 0")
+    click_button("Request to book a Space")
     expect(page).to have_content('Requests')
 
 

@@ -6,7 +6,8 @@ Making the databases
 2. CREATE DATABASE bnb;
 3. \c bnb
 4. run sql 01
-5. repeat step 2 to 3 but replaces bnb with bnb_test
+5. run sql 02
+6. repeat step 2 to 5 but replaces bnb with bnb_test
 
 Setup
 

@@ -26,8 +26,8 @@ end
 
 post '/spaces' do
   #input = params['inputspacetextbox']
-Spaces.create(name: params['inputspacetextbox'])
-redirect '/spaces'
+  Spaces.create(name: params['inputspacetextbox'], description: params['inputdesctextbox'])
+  redirect '/spaces'
 end
 
   run! if app_file == $0
