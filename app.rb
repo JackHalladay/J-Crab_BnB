@@ -30,6 +30,13 @@ Spaces.create(name: params['inputspacetextbox'])
 redirect '/spaces'
 end
 
+post '/newusers' do
+  #User.create(email: params[:email], password: params[:password])
+  #redirect '/bookmarks'
+  'Welcome, test@example.com'
+end
+
+
   run! if app_file == $0
 end
 
