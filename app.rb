@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './lib/spaces.rb'
+require 'sinatra/reloader'
 
 class BnB < Sinatra::Base
   get '/test' do

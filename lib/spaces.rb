@@ -8,7 +8,7 @@ class Spaces
     else
       connection = PG.connect(dbname: 'bnb')
     end
-    result = connection.exec("SELECT * FROM spaces;")
+    result = connection.exec("SELECT * FROM spaces ORDER BY name asc;")
     result.map { |space| space['name'] }
   end
 
