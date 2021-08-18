@@ -67,13 +67,17 @@ button {
   margin-left: .5em;
 }
 </style>
- 
+
 <h1>View our Spaces</h1>
+<% if @user %>
+<h1>Welcome, <%= @user.email %></h1>
+<% end %>
 <br><form method="get" action="/addspaces">
 <input type="submit" value="Add a Space" />
 </form>
 <body style="background-color:#cd7f84;" >
 </br>
+
 <h2>These are the current rooms</h2>
 
 
