@@ -32,9 +32,14 @@ feature 'Homepage Functionality' do
 end
  feature 'Requests' do
   scenario "users can request a space" do
+    visit ('/addspaces')
+    fill_in('inputspacetextbox', with: 'J-Crab BnB Original, J-Crab island')
+    click_button('Submit')
     visit ('/spaces')
-    click_button('Request to book a Space')
+    click_button("Request to book a Space 0")
     expect(page).to have_content('Requests')
+
+
   end
 end  
 feature 'Input Name of space' do

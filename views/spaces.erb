@@ -78,11 +78,11 @@ button {
 
 
 <div>
-<% @spaces.each do |spaces| %>
+<% @spaces.each_with_index do |spaces, index| %>
   <table>
   <tr>
   <td style="text-align: bottom"> <form method="get" action="/requestspaces">
-  <input type="submit" value="Request to book a Space"  />
+  <input type="submit" value="Request to book a Space <%= index %>"  />
   </form> </td>
   <td style="text-align: center">  Name: <%= spaces  %> </td>
   </tr>
