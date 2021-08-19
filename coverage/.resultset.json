@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jackhalladay/Projects/J-Crab_BnB/app.rb": {
+      "/Users/alexia/Documents/week_7/J-Crab_BnB/app.rb": {
         "lines": [
           1,
           null,
@@ -14,7 +14,7 @@
           null
         ]
       },
-      "/Users/jackhalladay/Projects/J-Crab_BnB/spec/features/test_page_spec.rb": {
+      "/Users/alexia/Documents/week_7/J-Crab_BnB/spec/features/test_page_spec.rb": {
         "lines": [
           1,
           1,
@@ -25,6 +25,6 @@
         ]
       }
     },
-    "timestamp": 1629125931
+    "timestamp": 1629128037
   }
 }
