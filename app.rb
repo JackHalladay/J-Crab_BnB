@@ -7,28 +7,33 @@ class BnB < Sinatra::Base
     'Test page'
   end
 
-get '/' do
-  erb :homepage
-end
+  get '/' do
+    erb :homepage
+  end
 
-get '/spaces' do
-  @spaces = Spaces.view
-  erb :spaces
-end
+  get '/spaces' do
+    @spaces = Spaces.view
+    erb :spaces
+  end
 
-get '/addspaces' do
-  erb :addspaces
-end
+  get '/addspaces' do
+    erb :addspaces
+  end
 
-get '/requestspaces' do
-  erb :requests
-end
+  post '/requestspaces' do
+    @@place = params[:blah]
+    redirect '/requested'
+  end
 
-post '/spaces' do
-  #input = params['inputspacetextbox']
-  Spaces.create(name: params['inputspacetextbox'], description: params['inputdesctextbox'])
-  redirect '/spaces'
-end
+  get '/requested' do
+    erb :requests
+  end
+
+  post '/spaces' do
+    #input = params['inputspacetextbox']
+    Spaces.create(name: params['inputspacetextbox'], description: params['inputdesctextbox'])
+    redirect '/spaces'
+  end
 
   run! if app_file == $0
 end

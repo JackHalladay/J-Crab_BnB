@@ -81,7 +81,8 @@ button {
 <% @spaces.each do |spaces| %>
   <table>
   <tr>
-  <td style="text-align: bottom"> <form method="get" action="/requestspaces">
+  <td style="text-align: bottom"> <form method="post" action="/requestspaces">
+  <input type="hidden" name="blah" value="<%= spaces.id %>">
   <input type="submit" value="Request to book a Space <%= spaces.id %>"  />
   </form> </td>
   <td style="text-align: center">  Name: <%= spaces.name  %> </td>
