@@ -69,7 +69,7 @@
           0,
           null,
           9,
-          1122,
+          1230,
           null,
           null,
           1,
@@ -86,23 +86,23 @@
       "/Users/Student/wk7bnbwork/J-Crab_BnB/lib/user.rb": {
         "lines": [
           null,
-          null,
-          null,
           1,
           null,
           1,
+          null,
           1,
+          1,
+          4,
           null,
-          null,
-          3,
-          3,
+          4,
+          4,
           null,
           0,
           null,
           null,
-          3,
+          4,
           null,
-          3,
+          4,
           null,
           null,
           1,
@@ -119,8 +119,8 @@
           null,
           null,
           1,
-          5,
-          5,
+          6,
+          6,
           null,
           null,
           null
@@ -257,10 +257,21 @@
           null,
           1,
           null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1629312155
+    "timestamp": 1629368297
   }
 }
