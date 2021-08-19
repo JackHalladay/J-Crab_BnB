@@ -42,10 +42,13 @@ def self.authenticate(email:, password:)
   else
     connection = PG.connect(dbname: 'bnb')
   end
+  
+  
 
   result = connection.exec(
     "SELECT * FROM users WHERE email = '#{email}' "
   )
+  return unless result.any?
   User.new(id: result[0]['id'], email: result[0]['email'])
 end
 

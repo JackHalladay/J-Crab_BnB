@@ -51,10 +51,17 @@ get '/sessions/new' do
 end
 
 post '/sessions' do
-  p params
   user = User.authenticate(email: params[:email], password: params[:password])
-  session[:user_id] = user.id
-  redirect('/spaces')
+  if user
+    session[:user_id] = user.id
+    redirect('/spaces')
+  else
+    #flash[:notice] = 'Please check your email or password.' need to implement flash features
+   # add this to html <h2><%= flash[:notice] %> </h2> - its a step in bookmark manager
+    redirect('/sessions/new')
+  end
+    
+  
 end
 
   run! if app_file == $0
