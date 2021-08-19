@@ -77,10 +77,3 @@ end
 
   run! if app_file == $0
 end
-
-<<<<<<< HEAD
-
-testsete
-yep
-=======
->>>>>>> a50ae8fa2a73278c4aeddd48f5e3ff4d0eba6249

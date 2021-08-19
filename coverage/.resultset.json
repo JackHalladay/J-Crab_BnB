@@ -19,7 +19,7 @@
           1,
           null,
           1,
-          4,
+          5,
           null,
           null,
           1,
@@ -32,6 +32,11 @@
           null,
           1,
           5,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -67,21 +72,19 @@
           null,
           null,
           null,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
           null,
+          1,
           null,
           null,
           null,
           null,
           1,
-          null,
           null
         ]
       },
-      "/Users/jackhalladay/Projects/J-Crab_BnB/lib/spaces.rb": {
+      "/Users/alexia/Documents/week_7/J-Crab_BnB/lib/spaces.rb": {
         "lines": [
           1,
           null,
@@ -100,9 +103,10 @@
           null,
           0,
           null,
-
           11,
-          17,
+          11,
+          6,
+          null,
           null,
           null,
           1,
@@ -117,7 +121,7 @@
           null
         ]
       },
-      "/Users/Student/wk7bnbwork/J-Crab_BnB/lib/user.rb": {
+      "/Users/alexia/Documents/week_7/J-Crab_BnB/lib/user.rb": {
         "lines": [
           null,
           1,
@@ -176,7 +180,7 @@
           null
         ]
       },
-      "/Users/Student/wk7bnbwork/J-Crab_BnB/spec/authentication_spec.rb": {
+      "/Users/alexia/Documents/week_7/J-Crab_BnB/spec/authentication_spec.rb": {
         "lines": [
           null,
           1,
@@ -254,117 +258,113 @@
           null
         ]
       },
-<<<<<<< HEAD
+      "/Users/alexia/Documents/week_7/J-Crab_BnB/spec/features/homepage_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/alexia/Documents/week_7/J-Crab_BnB/spec/features/registration_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/alexia/Documents/week_7/J-Crab_BnB/spec/features/test_page_spec.rb": {
-=======
-      "/Users/Student/wk7bnbwork/J-Crab_BnB/spec/features/homepage_spec.rb": {
->>>>>>> a50ae8fa2a73278c4aeddd48f5e3ff4d0eba6249
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/Student/wk7bnbwork/J-Crab_BnB/spec/features/registration_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/Student/wk7bnbwork/J-Crab_BnB/spec/features/test_page_spec.rb": {
         "lines": [
           1,
           1,
@@ -374,7 +374,7 @@
           null
         ]
       },
-      "/Users/Student/wk7bnbwork/J-Crab_BnB/spec/user_spec.rb": {
+      "/Users/alexia/Documents/week_7/J-Crab_BnB/spec/user_spec.rb": {
         "lines": [
           null,
           null,
@@ -425,10 +425,6 @@
         ]
       }
     },
-<<<<<<< HEAD
-    "timestamp": 1629128037
-=======
-    "timestamp": 1629382329
->>>>>>> a50ae8fa2a73278c4aeddd48f5e3ff4d0eba6249
+    "timestamp": 1629387074
   }
 }
