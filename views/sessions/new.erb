@@ -4,7 +4,7 @@
 form {
   /* Center the form on the page */
   margin: 0 auto;
-  width: 250code px;
+  width: 500 px;
   /* Form outline */
   padding: 1em;
   border: 8px solid #CCC;
@@ -35,6 +35,7 @@ textarea {
   font: 1em sans-serif;
 
   /* Uniform text field size */
+  height: 50px;
   width: 300px;
   box-sizing: border-box;
 
@@ -68,37 +69,14 @@ button {
 }
 </style>
 
-<h1>View our Spaces</h1>
-<% if @user %>
-<h1>Welcome, <%= @user.email %></h1>
-<% end %>
-<br><form method="get" action="/addspaces">
-<input type="submit" value="Add a Space" />
-</form>
+
+
 <body style="background-color:#cd7f84;" >
-</br>
-<form action="/sessions/destroy" method="post">
-  <input type="submit" value="Sign out" />
+<h1> Login </h1>
+<form action="/sessions" method="post">
+  <input type="email" name="email" placeholder = "enter email address"/>
+  <br>
+  <input type="password" name="password"  placeholder = "enter password"/>
+  <br>
+  <input type="submit" value="Sign in" />
 </form>
-<h2>These are the current rooms</h2>
-
-
-<div>
-<% @spaces.each do |spaces| %>
-  <table>
-  <tr>
-  <td style="text-align: bottom"> <form method="post" action="/requestspaces">
-  <input type="hidden" name="blah" value="<%= spaces.id %>">
-  <input type="submit" value="Request to book a Space <%= spaces.id %>"  />
-  </form> </td>
-  <td style="text-align: center">  Name: <%= spaces.name  %> </td>
-  <td style="text-align: center">  Description: <%= spaces.description  %> </td>
-  </tr>
-  <% end %>
-</div>
-
-
-
-
-
-
