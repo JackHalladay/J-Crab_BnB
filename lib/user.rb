@@ -45,10 +45,9 @@ def self.authenticate(email:, password:)
   
   
 
-  result = connection.exec(
-    "SELECT * FROM users WHERE email = '#{email}' "
-  )
+  result = connection.exec("SELECT * FROM users WHERE email = '#{email}'")
   return unless result.any?
+  return unless BCrypt::Password.new(result[0]['password']) == password
   User.new(id: result[0]['id'], email: result[0]['email'])
 end
 
