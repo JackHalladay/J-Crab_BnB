@@ -5,8 +5,9 @@ Making the databases
 1. psql
 2. CREATE DATABASE bnb;
 3. \c bnb
-4. run sql 01 and 02
-5. repeat step 2 to 3 but replaces bnb with bnb_test
+4. run sql 01
+5. run sql 02
+6. repeat step 2 to 5 but replaces bnb with bnb_test
 
 Setup
 

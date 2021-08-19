@@ -13,31 +13,36 @@ class BnB < Sinatra::Base
   
   enable :sessions
 
-get '/' do
-  erb :homepage
-end
+  get '/' do
+    erb :homepage
+  end
 
-get '/spaces' do
-  
-  @user = User.find(session[:user_id])
-  
-  @spaces = Spaces.view
-  erb :spaces
-end
+  get '/spaces' do
 
-get '/addspaces' do
-  erb :addspaces
-end
+    @user = User.find(session[:user_id])
 
-get '/requestspaces' do
-  erb :requests
-end
+    @spaces = Spaces.view
+    erb :spaces
+  end
 
-post '/spaces' do
-  #input = params['inputspacetextbox']
-Spaces.create(name: params['inputspacetextbox'])
-redirect '/spaces'
-end
+  get '/addspaces' do
+    erb :addspaces
+  end
+
+  post '/requestspaces' do
+    @@place = params[:blah]
+    redirect '/requested'
+  end
+
+  get '/requested' do
+    erb :requests
+  end
+
+  post '/spaces' do
+    #input = params['inputspacetextbox']
+    Spaces.create(name: params['inputspacetextbox'], description: params['inputdesctextbox'])
+    redirect '/spaces'
+  end
 
 post '/newusers' do
   user = User.create(email: params[:email], password: params[:password])
