@@ -60,9 +60,15 @@ post '/sessions' do
    # add this to html <h2><%= flash[:notice] %> </h2> - its a step in bookmark manager
     redirect('/sessions/new')
   end
-    
-  
 end
+
+post '/sessions/destroy' do
+  session.clear
+  #flash[:notice] = 'You have signed out.'
+  redirect('/')
+end
+
+  
 
   run! if app_file == $0
 end
