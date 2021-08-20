@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Student/wk7bnbwork/J-Crab_BnB/app.rb": {
+      "/Users/bilanali/Documents/J-Crab_BnB/app.rb": {
         "lines": [
           1,
           1,
@@ -75,7 +75,7 @@
           null,
           1,
           1,
-          null,
+          1,
           1,
           null,
           null,
@@ -83,7 +83,7 @@
           null
         ]
       },
-      "/Users/Student/wk7bnbwork/J-Crab_BnB/lib/spaces.rb": {
+      "/Users/bilanali/Documents/J-Crab_BnB/lib/spaces.rb": {
         "lines": [
           1,
           null,
@@ -120,7 +120,7 @@
           null
         ]
       },
-      "/Users/jackhalladay/Projects/J-Crab_BnB/lib/user.rb": {
+      "/Users/bilanali/Documents/J-Crab_BnB/lib/user.rb": {
         "lines": [
           null,
           1,
@@ -177,7 +177,7 @@
           null
         ]
       },
-      "/Users/jackhalladay/Projects/J-Crab_BnB/spec/authentication_spec.rb": {
+      "/Users/bilanali/Documents/J-Crab_BnB/spec/authentication_spec.rb": {
         "lines": [
           null,
           1,
@@ -255,7 +255,7 @@
           null
         ]
       },
-      "/Users/jackhalladay/Projects/J-Crab_BnB/spec/features/homepage_spec.rb": {
+      "/Users/bilanali/Documents/J-Crab_BnB/spec/features/homepage_spec.rb": {
         "lines": [
           1,
           1,
@@ -326,7 +326,7 @@
           null
         ]
       },
-      "/Users/jackhalladay/Projects/J-Crab_BnB/spec/features/registration_spec.rb": {
+      "/Users/bilanali/Documents/J-Crab_BnB/spec/features/registration_spec.rb": {
         "lines": [
           null,
           null,
@@ -361,7 +361,7 @@
           null
         ]
       },
-      "/Users/jackhalladay/Projects/J-Crab_BnB/spec/features/test_page_spec.rb": {
+      "/Users/bilanali/Documents/J-Crab_BnB/spec/features/test_page_spec.rb": {
         "lines": [
           1,
           1,
@@ -371,7 +371,7 @@
           null
         ]
       },
-      "/Users/jackhalladay/Projects/J-Crab_BnB/spec/user_spec.rb": {
+      "/Users/bilanali/Documents/J-Crab_BnB/spec/user_spec.rb": {
         "lines": [
           null,
           null,
@@ -422,5 +422,6 @@
         ]
       }
     },
+    "timestamp": 1629455415
   }
 }
