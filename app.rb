@@ -3,10 +3,12 @@ require './lib/spaces.rb'
 require 'sinatra/reloader'
 require './lib/user.rb'
 require 'pg'
-
+require 'sinatra/flash'
 
 
 class BnB < Sinatra::Base
+  register Sinatra::Flash
+  
   get '/test' do
     'Test page'
   end
@@ -61,19 +63,16 @@ post '/sessions' do
     session[:user_id] = user.id
     redirect('/spaces')
   else
-    #flash[:notice] = 'Please check your email or password.' need to implement flash features
-   # add this to html <h2><%= flash[:notice] %> </h2> - its a step in bookmark manager
+    flash[:notice] = 'Please check your email or password.' 
     redirect('/sessions/new')
   end
 end
 
 post '/sessions/destroy' do
   session.clear
-  #flash[:notice] = 'You have signed out.'
+  flash[:notice] = 'You have signed out.'
   redirect('/')
 end
-
-  
 
   run! if app_file == $0
 end

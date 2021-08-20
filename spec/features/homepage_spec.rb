@@ -1,7 +1,7 @@
 feature 'Homepage Functionality' do
     scenario 'user clicks on the homepage' do
       visit ('/')
-      expect(page).to have_content('J-Crab')
+      expect(page).to have_content('J-CRAB')
     end
   end
 
