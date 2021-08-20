@@ -7,4 +7,4 @@ CREATE TABLE requests (
 	FOREIGN KEY (dates_id) REFERENCES dates (id),
 	FOREIGN KEY (space_id) REFERENCES spaces (id),
 	FOREIGN KEY (user_id) REFERENCES users (id)
-);
+); 
