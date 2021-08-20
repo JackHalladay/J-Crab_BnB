@@ -1,7 +1,7 @@
 # J-Crab_BnB - Claw a stay with us!
 
 # User stories
-MVP
+
 As a user
 So that people can book my space
 I would like to be able to add it
@@ -25,11 +25,11 @@ I would like to be able to add a description and price
 # Description 
 This is the week 7 project. The task was to design an AirBnB clone: MakersBnB. Our goal was to create a product that satisfied the above user stories. Our final product had the following specification:
 
-Users can sign up to MakersBnB
-Users can log in/log out to MakersBnB
-Users can create one or more listings on MakersBnB -  listings include a property name, description
-Users can view listings on MakersBnB
-Users can request a listing on MakersBnB 
+1. Users can sign up to MakersBnB
+2. Users can log in/log out to MakersBnB
+3. Users can create one or more listings on MakersBnB -  listings include a property name, description
+4. Users can view listings on MakersBnB
+5. Users can request a listing on MakersBnB 
 
 # Making the databases
 
