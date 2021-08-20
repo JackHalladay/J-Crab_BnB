@@ -32,7 +32,9 @@ class BnB < Sinatra::Base
   end
 
   post '/requestspaces' do
-    @@place = params[:blah]
+    @@id = params[:id]
+    @@name = params[:name]
+    @@desc = params[:description]
     redirect '/requested'
   end
 
