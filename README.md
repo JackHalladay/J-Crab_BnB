@@ -14,8 +14,6 @@ As a user
 To try and book a stay
 I would like to request a booking
 
-As a user
-
 Other
 As a user
 So that people know information about my space
