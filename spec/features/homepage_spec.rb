@@ -63,5 +63,20 @@ feature 'list spaces' do
     expect(page).to have_content('J-Crab2 BnB Original, J-Crab island')
   end
 end
-
+ 
+feature 'user can add details to spaces creation' do
+  scenario "user can add available dates and price to add spaces" do
+    visit ('/addspaces')
+    fill_in('inputspacetextbox', with: 'J-Crab3 BnB Original, J-Crab island')
+    click_button('Submit')
+    visit ('/addspaces')
+    fill_in('inputspacetextbox', with: 'J-Crab4 BnB Original, J-Crab island')
+    fill_in('inputpricetextbox', with: '25')
+    fill_in('availablefrom', with: '01/09/2021')
+    fill_in('availableto', with: '30/09/2021') 
+    click_button('Submit')
+    expect(page).to have_content('J-Crab3 BnB Original, J-Crab island')
+    expect(page).to have_content('J-Crab4 BnB Original, J-Crab island')
+  end
+end
 
