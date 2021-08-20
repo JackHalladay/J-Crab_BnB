@@ -1,6 +1,6 @@
 # J-Crab_BnB - Claw a stay with us!
 
-User stories
+# User stories
 MVP
 As a user
 So that people can book my space
@@ -22,7 +22,7 @@ So that people know information about my space
 I would like to be able to add a description and price
 
 
-Description 
+# Description 
 This is the week 7 project. The task was to design an AirBnB clone: MakersBnB. Our goal was to create a product that satisfied the above user stories. Our final product had the following specification:
 
 Users can sign up to MakersBnB
@@ -31,7 +31,7 @@ Users can create one or more listings on MakersBnB -  listings include a propert
 Users can view listings on MakersBnB
 Users can request a listing on MakersBnB 
 
-Making the databases
+# Making the databases
 
 1. psql
 2. CREATE DATABASE bnb;
@@ -43,7 +43,7 @@ Making the databases
 8. run sql 05
 6. repeat step 2 to 5 but replaces bnb with bnb_test
 
-Setup
+# Setup
 
 To run this app in your local environment you will have to create two databases. One for testing, one to trial the app in development mode. You can set this up using PSQL as follows:
 
@@ -65,7 +65,7 @@ To check out the app in dev environment:
 2. In your preferred browser, navigate to localhost:9292
 
 
-Technologies 
+# Technologies 
 1. Sinatra: Ruby Framework
 2. Rspec/Capybara: For unit and feature testing
 3. Sinatra-Flash: For displaying notices/errors to users
@@ -73,7 +73,7 @@ Technologies
 5. PostgreSQL: to store and manage databases 
 
 
-Challenges
+# Challenges
 
 Initally we had some challenges with learning and applying new tech tools such as HTML and making it
 work efficiently with Ruby. Also, we occassionally came across syntax issues when accidentally using reserved words (such as 'user' in PostgreSQL) however we managed to resolve this by avoiding using these words. One thing that we could've done differently is creating the database design upfront in order to avoid more changes later and keeping it concise.
