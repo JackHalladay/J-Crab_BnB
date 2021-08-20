@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jackhalladay/Projects/J-Crab_BnB/app.rb": {
+      "/Users/Student/wk7bnbwork/J-Crab_BnB/app.rb": {
         "lines": [
           1,
           1,
@@ -21,11 +21,15 @@
           1,
           null,
           1,
-          5,
+          3,
           null,
           null,
           1,
           null,
+          11,
+          null,
+          11,
+          11,
           null,
           null,
           1,
@@ -81,7 +85,7 @@
           null
         ]
       },
-      "/Users/jackhalladay/Projects/J-Crab_BnB/lib/spaces.rb": {
+      "/Users/Student/wk7bnbwork/J-Crab_BnB/lib/spaces.rb": {
         "lines": [
           1,
           null,
@@ -95,6 +99,14 @@
           null,
           null,
           1,
+          11,
+          11,
+          null,
+          0,
+          null,
+          11,
+          11,
+          9,
           null,
           null,
           null,
@@ -135,12 +147,12 @@
           1,
           null,
           1,
-          11,
-          11,
+          13,
+          13,
           null,
           0,
           null,
-          11,
+          13,
           4,
           4,
           null,
@@ -254,19 +266,19 @@
           null,
           null,
           null,
-          1,
-          1,
-          1,
-          1,
-          0,
           null,
           null,
           null,
-          1,
-          1,
-          1,
-          1,
-          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -427,7 +439,6 @@
         ]
       }
     },
-    "timestamp": 1629464460
-
+    "timestamp": 1629471107
   }
 }
