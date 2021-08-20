@@ -27,8 +27,8 @@ feature 'authentication' do
       click_button('Sign in')
   
       expect(page).not_to have_content 'Welcome, test@example.com'
-      # expect(page).to have_content 'Please check your email or password.' 
-      # not until flash implemented
+       expect(page).to have_content 'Please check your email or password.' 
+       
     end
   end
 
@@ -44,7 +44,7 @@ feature 'authentication' do
       click_button('Sign in')
   
       expect(page).not_to have_content 'Welcome, test@example.com'
-      #expect(page).to have_content 'Please check your email or password.'
+      expect(page).to have_content 'Please check your email or password.'
     end
 
 feature 'authentication' do
@@ -62,7 +62,7 @@ feature 'authentication' do
     click_button('Sign out')
 
     expect(page).not_to have_content 'Welcome, test@example.com'
-    #expect(page).to have_content 'You have signed out.'
+    expect(page).to have_content 'You have signed out.'
   end
 end
 
