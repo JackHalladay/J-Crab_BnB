@@ -36,20 +36,18 @@ class User
     @email = email
   end
 
-def self.authenticate(email:, password:)
-  if ENV['ENVIRONMENT'] == 'test'
-    connection = PG.connect(dbname: 'bnb_test')
-  else
-    connection = PG.connect(dbname: 'bnb')
+  def self.authenticate(email:, password:)
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'bnb_test')
+    else
+      connection = PG.connect(dbname: 'bnb')
+    end
+    
+    
+
+    result = connection.exec("SELECT * FROM users WHERE email = '#{email}'")
+    return unless result.any?
+    return unless BCrypt::Password.new(result[0]['password']) == password
+    User.new(id: result[0]['id'], email: result[0]['email'])
   end
-  
-  
-
-  result = connection.exec("SELECT * FROM users WHERE email = '#{email}'")
-  return unless result.any?
-  return unless BCrypt::Password.new(result[0]['password']) == password
-  User.new(id: result[0]['id'], email: result[0]['email'])
-end
-
-
 end
